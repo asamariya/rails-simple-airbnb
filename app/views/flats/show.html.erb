@@ -1,0 +1,56 @@
+<div class="wrapper">
+  <div class="banner">
+  <!--   <img id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoiYXNhbWFyaXlhIiwiYSI6ImNqejNoMjVleDAzNDMzYnN2azM3anA5cnYifQ.Z3gBIGRLYkSZo3ZQVWQNMg'> -->
+  </div>
+
+  <div class="container info">
+    <div class="row">
+      <div class="col-8">
+        <div class="heading info-box">
+          <h2><%= @flat.name %></h2>
+          <h5><%= @flat.address %></h5>
+        </div>
+        <div class="description info-box mt-3">
+          <h3>A bit more about this flat</h3>
+          <p><%= @flat.description %></p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="book info-box">
+          <h5>Book this place!</h5>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">From:</span>
+            </div>
+            <input type="text" class="form-control" placeholder="<%= Date.today.strftime("%e/%m/%Y") %>" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">To:</span>
+            </div>
+            <input type="text" class="form-control" placeholder="<%= (Date.today + 7).strftime("%e/%m/%Y") %>" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <button class="btn btn-success w-100">Book</button>
+        </div>
+        <div class="details mt-3 info-box">
+          <h3>Details</h3>
+          <ul class="list-inline d-flex">
+            <li class="mr-3"><i class="fas fa-user-friends mr-1"></i><%= @flat.number_of_guests %></li>
+            <li><i class="fas fa-dollar-sign"></i><%= @flat.price_per_night %></li>
+          </ul>
+        </div>
+        <div class="social info-box d-flex justify-content-between mt-3">
+          <div class="share"><strong>Share</strong></div>
+          <div class="social-icons">
+            <i class="fab fa-facebook-square fa-2x mr-2"></i>
+            <i class="fab fa-twitter-square fa-2x mr-2"></i>
+            <i class="fab fa-pinterest-square fa-2x mr-2"></i>
+            <i class="fas fa-envelope-square fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

@@ -30,3 +30,18 @@
   width: 100%;
   margin-bottom: 16px;
 }
+
+.info {
+  margin-top: -75px;
+}
+
+.banner {
+  background-image: url(https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoiYXNhbWFyaXlhIiwiYSI6ImNqejNoMjVleDAzNDMzYnN2azM3anA5cnYifQ.Z3gBIGRLYkSZo3ZQVWQNMg);
+  height: 40vh;
+}
+
+.info-box {
+  background: #F8F9FA;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1rem;
+}
