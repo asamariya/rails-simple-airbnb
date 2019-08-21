@@ -1,1 +1,11 @@
 @import "bootstrap/scss/bootstrap";
+@import "flats.scss";
+
+ul {
+  list-style: none;
+}
+
+ul .list-inline li {
+  display: inline-block;
+  margin-right: 10px;
+}
